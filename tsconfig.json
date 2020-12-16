@@ -13,8 +13,11 @@
     "moduleResolution": "node",
     "resolveJsonModule": true,
     "isolatedModules": true,
-    "strictNullChecks": false
+    "strictNullChecks": false,
+    "paths": {
+      "react-use-audio-player": ["../src"]
+    }
   },
   "exclude": ["node_modules"],
-  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"],
+  "include": ["next-env.d.ts", "**/*.ts", "**/*.tsx"]
 }
