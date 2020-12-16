@@ -1,10 +1,11 @@
-import Header, { Sizes } from '../component/Header';
+import { AudioPlayerProvider } from "react-use-audio-player";
+import AudioPlayer from '../container/AudioPlayer';
 
 const Index = () => {
   return (
-    <div>
-      <Header text="Hello Next with Typescript" size={Sizes.small} />
-    </div>
+    <AudioPlayerProvider>
+      <AudioPlayer file="music.mp3" />
+    </AudioPlayerProvider>
   );
 };
 
