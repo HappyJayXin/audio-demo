@@ -2,10 +2,19 @@ interface IFile {
   file: string;
 }
 
-import { Wrapper } from './styled';
+import Tracker from '../Tracker';
+import Control from '../Control';
+import { Container, Wrapper } from './styled';
 
 const AudioPlayer = ({ file }: IFile) => {
-  return <Wrapper>file: {file}</Wrapper>;
+  return (
+    <Container>
+      <Wrapper>
+				<Tracker />
+				<Control />
+      </Wrapper>
+    </Container>
+  );
 };
 
 export default AudioPlayer;
