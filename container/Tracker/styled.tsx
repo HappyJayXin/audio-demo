@@ -8,7 +8,3 @@ export const Wrapper = styled.div`
 	margin-left: 15px;
 	margin-right: 15px;
 `;
-
-export const Time = styled.div`
-  margin-top: 10px;
-`;

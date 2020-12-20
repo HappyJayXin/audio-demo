@@ -1,11 +1,16 @@
+import { useAudioPosition } from 'react-use-audio-player';
+
 import Progress from '../../component/Progress';
-import { Wrapper, Time } from './styled';
+import TimeLabel from '../../component/TimeLabel';
+import { Wrapper } from './styled';
 
 const Tracker = () => {
+  const { duration, position } = useAudioPosition({ highRefreshRate: true });
+
   return (
     <Wrapper>
       <Progress />
-      <Time>0:01 / 3:42</Time>
+      <TimeLabel duration={duration} position={position} />
     </Wrapper>
   );
 };
